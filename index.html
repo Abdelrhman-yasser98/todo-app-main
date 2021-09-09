@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <section id="head">
+            <h1>TODO</h1>
+            <span>
+              <img src="images/icon-moon.svg" alt="icon-moon">
+              <img src="images/icon-sun.svg" alt="icon-sun" class="none">
+            </span>
+        </section>
+        <section id="add">
+            <span class="check" id="enter"><img src="images/icon-check.svg" alt="check"></span>
+            <input type="text" placeholder="Create a new todo...">
+        </section>
+        <section id="content">
+            <div id="added">
+                <p>Tasks will be added here</p>
+            </div>
+            <div id="controling">
+                <p><span id='counter'></span> tasks left</p>
+                <div id="states">
+                    <a class="lighted">All</a>
+                    <a>Active</a>
+                    <a>Completed</a>
+                </div>
+                <a id="rmcomp">Clear Completed</a>
+            </div>
+
+        </section>
+        <p id="outer"> Drag and drop to reorder list </p>
+    </section>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Abdelrhman-yasser98" target="_blank">AbdOozoO</a>.
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
